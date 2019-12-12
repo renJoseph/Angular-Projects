@@ -1,0 +1,13 @@
+<div class="login-section">
+    <div class="login-title">
+        <h1>Tickle tickle</h1>
+    </div>
+
+    <form [formGroup]="form" class="login-form">
+        <input formControlName="username" placeholder="Enter Username"><br>
+        <input type="email" placeholder="Enter Email"><br>
+        <input formControlName="password" type="password" placeholder="Enter Password"><br>
+        <input placeholder="Do you like cheese?"><br>
+        <button onsubmit="logInFunction();">Login</button>
+    </form>
+</div>

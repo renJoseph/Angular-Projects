@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    background-image: url("https://images.pexels.com/photos/2088167/pexels-photo-2088167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.col-2{
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+}
+.col-3{
+    display: flex;
+    flex-direction: column;
+    width: 300%;
+}
+.col-4{
+    display: flex;
+    flex-direction: column;
+    width: 400%;
+}
+.col-3rd{
+    display: flex;
+    flex-direction: column;
+    width: 33.33333333%;
+}
+
+.row{
+display: flex;
+flex-direction: row;
+}
+
+.navbar{
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    color: rgb(83, 83, 83);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: larger;
+}
+.page-title{
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-section{
+    background: rgba(0, 0, 10, 0.8);
+    height: 20vh;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.text-centred{
+    text-align: center;
+}
+.sub-section-2{
+    border: rgba(0, 0, 10, 0.30);
+    height: 12vh;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.buteen{
+    color: white;
+    background: blue;
+    border-radius: 2px;
+    border: none;
+    width: 10vh;
+    height: 4vh;
+    font-weight: bold;
+    font-size: medium;
+}
+.home-title{
+    font-size: x-large;
+}
+.button-dark{
+    color: white;
+    background: rgba(0, 0, 10, 0.30);
+}
+.top-menus{
+    color: white;
+    background-color: rgba(10, 10, 10, 0.5);
+    width: 4vh;
+    height: 2vh;
+}

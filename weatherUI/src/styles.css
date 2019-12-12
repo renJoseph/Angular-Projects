@@ -1,0 +1,83 @@
+/* Roboto looks nicer than default */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    background: #182b3a;
+    color: white;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url('https://afar-production.imgix.net/uploads/images/afar_post_headers/images/hMgp5KhvDm/original_norway-northern-lights-lofoten-aurora.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-content {
+    margin: 1rem;
+}
+
+
+.weather-card {
+    border: 1px solid #808080;
+    border-radius: 0.25rem;
+    background: #fff;
+    color: black;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-card:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+.weather-card>div {
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.weather-card-table .weather-card {
+    margin: 0;
+    border-bottom-width: 0px;
+    border-radius: 0;
+}
+
+.weather-card-table .weather-card:first-of-type {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.weather-card-table .weather-card:last-of-type {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-width: 1px;
+}
+
+
+.overview-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.overview-wrapper>div {
+    flex: 1 1 0px;
+    text-align: center;
+}

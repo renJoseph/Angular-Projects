@@ -1,0 +1,18 @@
+<div class="row">
+        <div class="col"></div>
+        <div class="col-3">
+            <br>
+            <input class="title" [ngModel]="noteData?.title" (ngModelChange)="noteData.title = $event">
+            <br>
+            <div class="text-container">
+    
+                    <textarea class="new-todo text row" 
+                    [ngModel]="noteData?.text" (ngModelChange)="noteData.text = $event"></textarea>
+    
+            </div>
+            <br>
+            <button (click)="updateNote()" class="btn-2">Update</button>
+            <br>
+        </div>
+        <div class="col"></div>
+    </div>

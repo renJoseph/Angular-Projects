@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+@import './Styles/login';
+
+$background-colour: rgba(197, 42, 42, 0.3);
+$color: red;
+
+@mixin defaultStyling {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10rem;
+}
+
+body{
+    background-image: url("https://i.pinimg.com/474x/e2/61/f5/e261f54cfeffa8c7ab165b2ca2679432.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login-section{
+    .login-title{
+        h1{
+            font-size: 5rem;
+        }
+    }
+    .login-form{
+        input{
+            background: $background-colour;
+        }
+        button{
+            background: $color;
+        }
+    }
+}
+// .ng-invalid{
+//     animation-name: spin;
+//   animation-duration: 1500ms;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear; 
+// }
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.ng-valid {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+.flashit{
+    color:#f2f;
+      -webkit-animation: flash linear 1s infinite;
+      animation: flash linear 1s infinite;
+  }
+  @-webkit-keyframes flash {
+      0% { opacity: 1; } 
+      50% { opacity: .1; } 
+      100% { opacity: 1; }
+  }
+  @keyframes flash {
+      0% { opacity: 1; } 
+      50% { opacity: .1; } 
+      100% { opacity: 1; }
+  }
+  /* Pulse class and keyframe animation */
+  .pulseit{
+      -webkit-animation: pulse linear .5s infinite;
+      animation: pulse linear .5s infinite;
+  }
+  @-webkit-keyframes pulse {
+      0% { width:200px; } 
+      50% { width:340px; } 
+      100% { width:200px; }
+  }
+  @keyframes pulse {
+      0% { width:200px; } 
+      50% { width:340px; } 
+      100% { width:200px; }
+  }

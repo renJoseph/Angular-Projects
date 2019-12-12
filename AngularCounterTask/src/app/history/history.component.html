@@ -1,0 +1,2 @@
+<h2 [class.odd]="counter%2 !==0" [class.even]="counter%2===0">History:</h2>
+<p [class.odd]="counter%2===0" [class.even]="counter%2 !=0" *ngFor="let h of history">{{h}}</p>

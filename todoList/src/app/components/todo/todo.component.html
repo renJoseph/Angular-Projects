@@ -1,0 +1,16 @@
+<div class="row">
+
+    <div class="col-3">
+        <h1 class="title">To Do</h1>
+        <div *ngFor="let x of allNotesData" class="text-container">
+            <div (click)="viewNote(x.id)" class="todo-item">
+                <h3>{{x.id}}. {{x.title}}</h3>
+                <p>{{x.text}}</p>
+                <button onclick="deleteNote();" class="btn-1">Remove</button>
+            </div>
+        </div>
+        <button routerLink="/new" class="btn-2">New Item</button>
+        <br>
+    </div>
+
+</div>

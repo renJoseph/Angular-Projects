@@ -1,0 +1,14 @@
+.zero{
+    background: deeppink;
+    color: lime;
+}
+
+.odd{
+    background-color: turquoise;
+    color: tomato;
+}
+
+.even{
+    background-color: blueviolet;
+    color: goldenrod;
+}

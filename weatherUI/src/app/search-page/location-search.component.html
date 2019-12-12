@@ -1,0 +1,15 @@
+<div class="search-container">
+    <div class="seach-box">
+        <input [(ngModel)]="inputText" placeholder="Enter a town or city">
+        <button (click)="searchForLocation()">Search</button>
+    </div>
+     <!-- For generating search results on search page -->
+    <!-- <div class="search-results">
+        <div *ngFor="let x of allLocationData?.results">
+            <div *ngFor="let key of locKeys">
+                {{key}}: {{x[key]}}
+            </div>
+            <br>
+        </div>
+    </div> -->
+</div>

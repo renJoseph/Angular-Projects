@@ -1,0 +1,8 @@
+<div class="character-container">
+    <div *ngFor="let x of allCharacterData?.results" class="character-block">
+        <div *ngFor="let key of charKeys" class="character-element">
+            {{key}}: {{x[key]}}
+        </div>
+        <br>
+    </div>
+</div>

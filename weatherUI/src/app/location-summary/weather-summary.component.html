@@ -1,0 +1,40 @@
+<div class="page-content">
+        <h1>{{weatherData?.title}}</h1>
+    
+        <hr>
+        <div *ngIf="today" class="overview-wrapper">
+            <div>
+                <h1>{{today.the_temp | number:'1.0-0'}}&deg;</h1>
+                <p>Temperature</p>
+            </div>
+            <div>
+                <h1>{{today.humidity | number:'1.0-0'}}%</h1>
+                <p>Humidity</p>
+            </div>
+            <div>
+                <h1>{{today.wind_speed | number:'1.0-0'}}</h1>
+                <p>Wind Speed</p>
+            </div>
+            <div>
+                <h1><img [attr.src]="'http://www.metaweather.com/static/img/weather/'+today.weather_state_abbr+'.svg'"
+                        height="32px"></h1>
+                <p>{{today.weather_state_name}}</p>
+            </div>
+        </div>
+    
+        <hr>
+        <h2>Day View</h2>
+        <div class="weather-card-table">
+            <div *ngFor="let day of weatherData?.consolidated_weather" class="weather-card" (click)="onDayClicked(day)">
+                <div>
+                    {{day.applicable_date | date:'EEEE'}}
+                </div>
+                <div>
+                    {{day.weather_state_name}}
+                </div>
+                <div>
+                    {{day.the_temp | number:'1.0-0'}}&deg;
+                </div>
+            </div>
+        </div>
+    </div>
